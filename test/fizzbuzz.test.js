@@ -6,15 +6,17 @@ describe ('function fizzbuzz', () => {
 
     it ('function returns fizz if number is multiple 3', () => {
         expect(fizzbuzz(3)).toBe ('fizz');
-        expect(fizzbuzz(6)).toBe ('fizz');
+        expect(fizzbuzz(9)).toBe ('fizz');
     });
     
     it ('function returns buzz if number is multiple of 5', () => {
         expect(fizzbuzz(5)).toBe ('buzz')
+        expect(fizzbuzz(25)).toBe ('buzz')
     });
     
     it('function returns fizzbuzz if number is multiple of 3 and 5', () => {
         expect(fizzbuzz(15)).toBe ('fizzbuzz')
+        expect(fizzbuzz(45)).toBe ('fizzbuzz')
 });
 
 it('function returns number if number is NOT multiple of 3 and 5', () => {
